@@ -25,7 +25,7 @@ app.set('views', path.join(__dirname, 'server/views'));
 app.set('view enginge', 'pug');
 
 app.use('/', indexRouter);
-app.use('/api/getProducts', productRouter);
+app.use('/getProducts', productRouter);
 
 app.listen(port, (err) => {
     if(err) {

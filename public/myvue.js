@@ -4,12 +4,12 @@
       data: {
         name: null,
         description: null,
-        qty: null,
+        quantity: null,
         products: []
       },
       created: function() {
         var self = this;
-        axios.get('http://localhost:8080/api/getProducts')
+        axios.get('http://localhost:8080/getProducts')
           .then(function(res) {
             self.products = res.data;
           })
@@ -21,7 +21,22 @@
         clear: function() {
           this.name = null;
           this.description = null;
-          this.qty = null;
+          this.quantity = null;
+        },
+        addProduct: function() {
+            var self = this;
+            var payload = {
+            name: self.name,
+            description: self.description,
+            quantity: self.quantity
+            };
+            axios.post('/getProducts', payload)
+            .then(function(res) {
+                self.products = res.data;
+                self.clear();
+            })
+            .catch(function(err) {
+            });
         }
       }
     });

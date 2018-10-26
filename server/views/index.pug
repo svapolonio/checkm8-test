@@ -44,9 +44,9 @@ html(lang="en")
                   textarea.form-control.form-control-sm#description(rows="3" name="description" v-model="description")
                 .form-group
                   label.text-primary Product Quantity
-                  input.form-control.form-control-sm#qty(type="text" name="qty" v-model="qty")
+                  input.form-control.form-control-sm#quantity(type="text" name="quantity" v-model="quantity")
                 .form-group
-                  button.btn.btn-outline-primary.btn-sm(type="button") Add Product
+                  button.btn.btn-outline-primary.btn-sm(type="button" v-on:click="addProduct") Add Product
                   | 
                   button.btn#clearBtn.btn-sm.btn-outline-secondary(type="button" v-on:click="clear") Clear
         .col-md-8
@@ -61,7 +61,7 @@ html(lang="en")
               td {{ product.id }}
               td {{ product.name }}
               td {{ product.description }}
-              td {{ product.qty }}
+              td {{ product.quantity }}
               td
                 button.btn.btn-sm.btn-outline-primary(v-on:click="deleteNote(note)") View
           
