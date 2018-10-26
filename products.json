@@ -1,0 +1,17 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "AUAUAU",
+			"description": "wkwkwkw",
+			"qty": "1"
+		},
+		{
+			"id": 2,
+			"name": "wowoweee",
+			"description": "wowee",
+			"qty": "1"
+		}
+	],
+	"notes": []
+}
