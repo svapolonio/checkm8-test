@@ -1,33 +1,28 @@
 {
 	"products": [
 		{
-			"id": 1,
-			"name": "AUAUAU",
-			"description": "wkwkwkw",
-			"qty": "1"
-		},
-		{
 			"id": 2,
-			"name": "wowoweee",
-			"description": "wowee",
-			"qty": "1"
+			"name": "Laptop 15inch",
+			"description": "ROG NUMBER 1",
+			"quantity": "100"
 		},
 		{
 			"id": 3,
-			"name": "El Bimbo",
-			"description": "Orayt"
+			"name": "PC DESKTOP",
+			"description": "PC DESKTOP PC DESKTOP PC DESKTOP",
+			"quantity": "15"
 		},
 		{
 			"id": 4,
-			"name": "Kara",
-			"description": "bobo"
+			"name": "SADASD",
+			"description": "SDADSDAS",
+			"quantity": "1"
 		},
 		{
 			"id": 5,
-			"name": "Petmali",
-			"description": "asd",
-			"quantity": "100"
+			"name": null,
+			"description": null,
+			"quantity": null
 		}
-	],
-	"notes": []
+	]
 }

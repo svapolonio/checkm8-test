@@ -4,7 +4,7 @@ const path = require('path');
 const morgan = require('morgan');
 const app = express();
 const indexRouter = require('./server/routers/indexRouter');
-const productRouter = require('./server/routers/productRouter');
+// const viewRouter = require('./server/routers/viewRouter');
 const port = 8080;
 
 app.use(morgan('dev'));
@@ -25,7 +25,11 @@ app.set('views', path.join(__dirname, 'server/views'));
 app.set('view enginge', 'pug');
 
 app.use('/', indexRouter);
-app.use('/getProducts', productRouter);
+app.use('/', indexRouter);
+// app.use('/deleteProduct', indexRouter);
+
+//VIEW PRODUCT
+// app.use('/viewProduct', viewRouter);
 
 app.listen(port, (err) => {
     if(err) {
